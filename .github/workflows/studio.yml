@@ -66,7 +66,7 @@ jobs:
         run: echo 'modules[]=@nuxthq/studio' > .nuxtrc
 
       - name: Generate
-        run: ${{ steps.pkgman.outputs.package_manager }} generate
+        run: ${{ steps.pkgman.outputs.package_manager }} run generate
         env:
           NUXT_PUBLIC_STUDIO_API_URL: https://api.nuxt.studio
           NUXT_PUBLIC_STUDIO_TOKENS: 6258c74a8ab474b6f1ec161ee5dfa93a332393ae45f57460b3b74c636e95d638
